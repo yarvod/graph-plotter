@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Racama";
+  src: local("Racama"),
+  url(@/assets/fonts/Racama.otf) format("truetype");
+}
+
+// Layout
+
+.container {
+  width: 95%;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $medium) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: $medium-xl) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: $large) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: $large-xl) {
+  .container {
+    width: 1320px;
+  }
+}
+
+//Text styles
+
+.b1 {
+  font-family: $racama;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: -0.36px;
+}
+
+.b2 {
+  font-family: $racama;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: -0.32px;
+}
+
+.b3 {
+  color: $black-212830;
+  text-align: center;
+
+  /* B3 */
+  font-family: $racama;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: -0.14px;
+}
+
+.button-text2 {
+  color: $black-212830;
+  text-align: center;
+
+  /* But2 */
+  font-family: $racama;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+}
+
+.banner-title {
+  color: $black-212830;
+  font-family: $racama;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 104.167% */
+
+  @include respond-to(mobile-xl) {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.banner-text {
+  color: $black-212830;
+  font-family: $racama;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 30.8px */
+  @include respond-to(mobile-xl) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -0.32px;
+  }
+}
+
+.card-button-text {
+  font-family: $racama;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+
+  @include respond-to(mobile-xl) {
+    font-size: 32px;
+  }
+}
+
+h1, .h1 {
+  color: $black-212830;
+
+/* H1 Racama */
+  font-family: $racama;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2, .h2 {
+  color: $black-212830;
+
+  /* H2 Racama */
+  font-family: $racama;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h3, .h3 {
+  color: $black-212830;
+
+/* H3 Racama */
+  font-family: $racama;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h4, .h4 {
+  color: $black-212830;
+
+  /* H5 Montserrat */
+  font-family: $racama;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+}
+
+h5, .h5 {
+  color: $black-212830;
+
+  /* H6 Montserrat */
+  font-family: $racama;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.h7 {
+  color: $black-212830;
+
+  /* H7 Montserrat */
+  font-family: $racama;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.main-title {
+  color: $black-212830;
+  font-family: $racama;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%; /* 75.6px */
+}
+
+
+//Chips
+.skill_chip {
+  background: $red_tag;
+  color: $black-212830;
+}
+
+.category_chip {
+  background: $green_tag;
+  color: $black-212830;
+}
+
+.location_chip {
+  background: $lavender_tag;
+  color: $black-212830;
+}
